@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a734140caa.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border border-left-0 border-right-0">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-5 fw-bold ps-0" href="#">DAINIK BHASKAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav fs-xl-5 fw-bold header-menu gap-3 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-house"></i>HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='./video/index.html'>
+                            <i class="fa-sharp fa-regular fa-circle-play"></i>VIDEO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='/search/'>
+                            <i class="fa-solid fa-magnifying-glass"></i>SEARCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='/westories/'>
+                            <i class="fa-solid fa-globe"></i>WEB-STORIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='/epaper/'>
+                            <i class="fa-sharp fa-regular fa-newspaper"></i>E-PAPER</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-circle-user fa-lg"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-userlogin" aria-labelledby="navbarDropdownMenuLink">
+                            <!-- Profile -->
+                            <li class="dropdown-header d-flex justify-content-between align-items-center px-3">
+                                <span class="fw-bold">मेरा प्रोफाइल</span>
+                                <button class="btn btn-warning btn-sm">लॉगिन</button>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Dark Mode Toggle -->
+                            <li class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <span class="fw-bold">डार्क मोड</span>
+                                <div class="form-check form-switch m-0">
+                                    <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+                                </div>
+                            </li>
+
+                            <!-- FAQs -->
+                            <li class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <a href="#" class="dropdown-item fw-bold p-0">FAQs</a>
+                                <i class="bi bi-chat-square-quote text-secondary"></i>
+                            </li>
+
+                            <!-- Feedback -->
+                            <li class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <a href="#" class="dropdown-item fw-bold p-0">फीडबैक दें</a>
+                                <i class="bi bi-envelope text-secondary"></i>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mini Banner -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-12 px-5">
+                <img src="./assets/images/update.jpg" class="img-fluid poster-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Big Banner -->
+    <div class="container-fluid col-md-12 mt-3">
+        <div class="row">
+            <div class="col-md-12 px-5">
+                <img src="./assets/images/lg.jpg" class="img-fluid poster-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Left Menu -->
+            <div class="col-lg-3 col-md-12">
+                <div class="sticky-sidebar">
+
+                </div>
+
+                <!-- Categories -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="top-news fw-bold border-none newslink-text">
+                            <a href="#"><i class="fa-solid fa-fire fs-4 ms-3 sub-icon icon-color-change"></i>
+                                <span class="text-body topnews">TOP NEWS</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Categories -->
+
+                <!-- Download App -->
+                <div class="">
+                    <p class=" fw-400 d.block text-body fw-bold mt-2 google-download-text">Download App From</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="">
+                            <a href="#" class=""><img style="width: 400px;height: 40px;object-fit: contain;"
+                                    src="./assets/images/Google_Play_Store_badge_EN.svg.jpg"
+                                    class="img-fluid rounded"></a>
+                        </div>
+                        <div class="">
+                            <a href="#"><img src="./assets/images/appstore.jpg"
+                                    style="width: 400px;height: 40px;object-fit: contain;"
+                                    class="img-fluid rounded"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Download End -->
+
+                <!-- Social Link -->
+                <p class="fs-lg-3 fs-md-1 fw-lighter text-body fw-bold mt-2 google-download-text">Follow us on</p>
+                <div class="">
+                    <div class="social-links d-flex justify-content-center">
+                        <a href="#"><i class="fa-brands fa-facebook-f fs-4 social-icon"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter fs-4 social-icon"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fs-4 social-icon"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-youtube fs-4 social-icon"></i></a>
+                    </div>
+                </div>
+                <!-- End Social Link -->
+            </div>
+            <!-- End Left Menu -->
+
+            <!-- News Timeline -->
+            <div class="col-md-6 border border-top-0">
+                <div>
+                    <!-- Featured News -->
+                    <div class="card">
+                        <div class="card-body">
+
+                            <a href="news/show.html">
+                                <div class="display-6 fs-6 mb-1 text-muted fw-normal">Hindi News Politics</div>
+
+                                <div>
+                                    <span class="badge bg-danger">BHASKAR EXPLANER</span>
+                                    <span class="display-6 fs-5 pt-1 lh-1 text-uppercase text-dark fw-bold">
+                                        <span class="text-warning">
+                                            The story of Saddam Hussein
+                                        </span>
+                                        Born today American soldiers also cried on the gallows
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="container d-flex flex-column">
+                                <div class="">
+                                    <h1 class="display-6"></h1>
+                                    <i class="fa-sharp fa-regular fa-circle-play text-white video-icon"></i>
+                                    <img src="./assets/images/modi.gif.jpg" height="340" width="100%"
+                                        class="img-fluid rounded-1">
+                                    <div class="d-flex justify-content-between mt-3 mb-2">
+                                        <a href="#" class="display-5 text-muted fs-5 fw-bolder m-1">National</a>
+                                        <div>
+                                            <a class="btn btn-icon btn-light" href="#"><i
+                                                    class="fa-brands fa-facebook-f fas"></i></a>
+                                            <a class="btn btn-icon btn-light" href="#"><i
+                                                    class="fa-brands fa-twitter fas"></i></a>
+                                            <a class="btn btn-icon btn-light" href="#"><i
+                                                    class="fa-sharp fa-solid fa-link fas"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Normal News -->
+                    <div class="card mt-2">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="card-body pt-4">
+                                    <p class="lh-sm"><span class="badge bg-danger">BHASKAR EXPLORE</span>
+                                        <span class="display-6 fs-5 pt-1 lh-1 text-uppercase fw-bold"
+                                            style="color: #f89c1d;">The story behind the Naxalite
+                                            attack in Chhattisgarh:</span>
+                                        <span class="display-6 fs-5 pt-1 lh-1 text-uppercase text-dark fw-bold">Most
+                                            attacks in summer; Still there was no
+                                            patrolling team, no bulletproof vehicle</span>
+                                    </p>
+                                    <div class="pt-lg-3">
+                                        <p class="display-6 fw-bold fs-6 text-primary ">INTERNATIONAL</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="position: relative;">
+                                <img src="./assets/images/card-image.jpg" alt="gif"
+                                    class="h-75 w-85 mt-3 float-center card-img">
+                                <span class="badge bg-info image-timeing">4:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End News Timeline -->
+
+            <!-- Right Menu -->
+            <div class="col-md-3">
+                <!-- Featured Square Banner -->
+                <div class="container p-2">
+                    <img src="./assets/images/aside.jpg" class="img-fluid">
+                </div>
+
+                <!-- Side Long Banner -->
+                <div class="container p-2">
+                    <i class="fa-sharp fa-regular fa-circle-play video-icons"></i>
+                    <img src="./assets/images/sakhi-sampradaye.jpg" height="420" width="357"
+                        class="img-fluid rounded-1 mt-3">
+                </div>
+
+                <!-- Rasi Widget -->
+                <div class="container p-2">
+                    <div class="bg-light p-3">
+                        <span class="fw-bolder fs-6">TODAY RASHIFUL</span><br>
+                        <img src="./assets/images/rashi_img_1585907145.27231585907145.png"
+                            class="img-fluid w-25 h-25"><span class="fw-bold fs-5">Aries</span>
+                        <div class="text-muted fw-600 fs-6">
+                            Positive Some happiness can be found. You will feel happy and energetic by solving family
+                            problems. Any special issue will also be discussed with the family. People will be impressed
+                            by you. Negative- There can be tension with the neighbor..
+                        </div>
+                    </div>
+                </div>
+                <!-- End Rasi Widget -->
+
+
+
+                <!-- Imp Links -->
+                <div class="container p-2">
+                    <div class="bg-light p-3">
+                        <div class="">
+                            <span class="">Imp Links:</span>
+                            <ul class="">
+                                <li><a class="text-muted" href="#">Advertise with Us</a>
+                                </li>
+                                <li><a class="text-muted" href="#">DB Reporter</a>
+                                </li>
+                                <li><a class="text-muted" href="#">Terms &amp; Conditions and Grievance Redressal
+                                        Policy</a>
+                                </li>
+                                <li><a class="text-muted" href="#">Contact Us</a>
+                                </li>
+                                <li><a class="text-muted" href="#">RSS</a>
+                                </li>
+                                <li><a class="text-muted" href="#">Cookie Policy</a>
+                                </li>
+                                <li><a class="text-muted" href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                            <span class="">Our Divisions</span>
+                            <ul class="">
+                                <li><a class="text-muted" href="#">DainikBhaskar.com</a></li>
+                                <li><a class="text-muted" href="#">DivyaBhaskar.com</a></li>
+                                <li><a class="text-muted" href="#">DivyaMarathi.com</a></li>
+                                <li><a class="text-muted" href="#">MoneyBhaskar.com</a></li>
+                                <li><a class="text-muted" href="#">HomeOnline.com</a></li>
+                                <li><a class="text-muted" href="#">BhaskarAd.com</a></li>
+                            </ul>
+                            <p>Copyright © 2023-24 TezKhabar, All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Imp Links -->
+            </div>
+            <!-- End Right Menu -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
