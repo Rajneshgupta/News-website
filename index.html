@@ -17,14 +17,14 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light border border-left-0 border-right-0">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-5 px-md-4 px-2">
             <a class="navbar-brand fs-5 fw-bold ps-0" href="#">DAINIK BHASKAR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <ul class="navbar-nav fs-xl-5 fw-bold header-menu gap-3 align-items-center">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav fs-xl-5 fw-bold header-menu gap-lg-3 gap-md-2 gap-1 align-items-lg-center align-items-md-center align-items-start">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <i class="fa-solid fa-house"></i>HOME</a>
@@ -38,7 +38,7 @@
                             <i class="fa-solid fa-magnifying-glass"></i>SEARCH</a>
                     </li>
                     <li class="nav-item">
-                        <a class='nav-link' href='/westories/'>
+                        <a class='nav-link' href='./web-series/index.html'>
                             <i class="fa-solid fa-globe"></i>WEB-STORIES</a>
                     </li>
                     <li class="nav-item">
@@ -55,8 +55,8 @@
                         <ul class="dropdown-menu dropdown-userlogin" aria-labelledby="navbarDropdownMenuLink">
                             <!-- Profile -->
                             <li class="dropdown-header d-flex justify-content-between align-items-center px-3">
-                                <span class="fw-bold">मेरा प्रोफाइल</span>
-                                <button class="btn btn-warning btn-sm">लॉगिन</button>
+                                <span class="fw-bold">My Profile</span>
+                                <button class="btn btn-warning btn-sm">Login</button>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -64,7 +64,7 @@
 
                             <!-- Dark Mode Toggle -->
                             <li class="d-flex justify-content-between align-items-center px-3 py-2">
-                                <span class="fw-bold">डार्क मोड</span>
+                                <span class="fw-bold">Dark Mode</span>
                                 <div class="form-check form-switch m-0">
                                     <input class="form-check-input" type="checkbox" id="darkModeSwitch">
                                 </div>
@@ -78,22 +78,26 @@
 
                             <!-- Feedback -->
                             <li class="d-flex justify-content-between align-items-center px-3 py-2">
-                                <a href="#" class="dropdown-item fw-bold p-0">फीडबैक दें</a>
+                                <a href="#" class="dropdown-item fw-bold p-0">Feedback</a>
                                 <i class="bi bi-envelope text-secondary"></i>
                             </li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <!-- Mini Banner -->
     <div class="container-fluid mt-3">
         <div class="row">
-            <div class="col-md-12 px-5">
-                <img src="./assets/images/update.jpg" class="img-fluid poster-img">
+            <div class="col-md-12 px-lg-5 px-md-4 px-2">
+                <div class="top-banner">
+                    <a href="#">
+                        <img src="./assets/banner/home-short-banner.jpg" class="img-fluid poster-img">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -101,8 +105,12 @@
     <!-- Big Banner -->
     <div class="container-fluid col-md-12 mt-3">
         <div class="row">
-            <div class="col-md-12 px-5">
-                <img src="./assets/images/lg.jpg" class="img-fluid poster-img">
+            <div class="col-md-12 px-lg-5 px-md-4 px-2">
+                <div class="middle-banner">
+                    <a href="#">
+                        <img src="./assets/banner/home-banner1.jpg" class="img-fluid poster-img">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -111,197 +119,290 @@
         <div class="row">
             <!-- Left Menu -->
             <div class="col-lg-3 col-md-12">
-                <div class="sticky-sidebar">
-
-                </div>
-
                 <!-- Categories -->
-                <div class="card">
-                    <div class="card-body">
-                        <div class="top-news fw-bold border-none newslink-text">
-                            <a href="#"><i class="fa-solid fa-fire fs-4 ms-3 sub-icon icon-color-change"></i>
-                                <span class="text-body topnews">TOP NEWS</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="category-list p-2">
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded active">
+                        <i class="fa-solid fa-fire me-2 icon-style"></i>
+                        <span class="category-text">Top News</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-location-dot me-2 icon-style"></i>
+                        <span class="category-text">State-City</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-globe me-2 icon-style"></i>
+                        <span class="category-text">All India News</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-baseball-bat-ball me-2 icon-style"></i>
+                        <span class="category-text">IPL 2025</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-star me-2 icon-style"></i>
+                        <span class="category-text">Bhaskar Special</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-circle-play me-2 icon-style"></i>
+                        <span class="category-text">DB Original</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-running me-2 icon-style"></i>
+                        <span class="category-text">Sports</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-clapperboard me-2 icon-style"></i>
+                        <span class="category-text">Bollywood</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-graduation-cap me-2 icon-style"></i>
+                        <span class="category-text">Job & Education</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-chart-line me-2 icon-style"></i>
+                        <span class="category-text">Business</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-heart me-2 icon-style"></i>
+                        <span class="category-text">Lifestyle</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-om me-2 icon-style"></i>
+                        <span class="category-text">Spiritual</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-female me-2 icon-style"></i>
+                        <span class="category-text">Women</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-landmark me-2 icon-style"></i>
+                        <span class="category-text">Nation</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-earth-americas me-2 icon-style"></i>
+                        <span class="category-text">World</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-solar-panel me-2 icon-style"></i>
+                        <span class="category-text">Religion</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-car me-2 icon-style"></i>
+                        <span class="category-text">Tech - Auto</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-circle-check me-2 icon-style"></i>
+                        <span class="category-text">Fact Check Express</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-medal me-2 icon-style"></i>
+                        <span class="category-text">Olympics</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-venus me-2 icon-style"></i>
+                        <span class="category-text">Astrology</span>
+                    </a>
+
+                    <a href="#" class="d-flex align-items-center py-2 px-3 rounded">
+                        <i class="fa-solid fa-language me-2 icon-style"></i>
+                        <span class="category-text">Regional</span>
+                    </a>
                 </div>
+
                 <!-- End Categories -->
 
                 <!-- Download App -->
-                <div class="">
-                    <p class=" fw-400 d.block text-body fw-bold mt-2 google-download-text">Download App From</p>
-                    <div class="d-flex justify-content-center">
-                        <div class="">
-                            <a href="#" class=""><img style="width: 400px;height: 40px;object-fit: contain;"
-                                    src="./assets/images/Google_Play_Store_badge_EN.svg.jpg"
-                                    class="img-fluid rounded"></a>
-                        </div>
-                        <div class="">
-                            <a href="#"><img src="./assets/images/appstore.jpg"
-                                    style="width: 400px;height: 40px;object-fit: contain;"
-                                    class="img-fluid rounded"></a>
-                        </div>
+                <div class="text-center my-4 d-lg-block d-md-block d-none">
+                    <p class="fw-bold text-muted">Download App from</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2">
+                        <a href="#">
+                            <img src="./assets/logo/app-store-restaurent.jpg" class="img-fluid store-badge"
+                                alt="Google Play">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/logo/goolgleapp-restaurent.jpg" class="img-fluid store-badge"
+                                alt="App Store">
+                        </a>
                     </div>
                 </div>
-                <!-- End Download End -->
 
-                <!-- Social Link -->
-                <p class="fs-lg-3 fs-md-1 fw-lighter text-body fw-bold mt-2 google-download-text">Follow us on</p>
-                <div class="">
-                    <div class="social-links d-flex justify-content-center">
-                        <a href="#"><i class="fa-brands fa-facebook-f fs-4 social-icon"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-twitter fs-4 social-icon"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram fs-4 social-icon"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-youtube fs-4 social-icon"></i></a>
+                <!-- Social Links -->
+                <div class="text-center mt-4 d-lg-block d-md-block d-none">
+                    <p class="fw-bold text-muted">Follow us on</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-decoration-none"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fa-brands fa-twitter social-icon"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram social-icon"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fa-brands fa-youtube social-icon"></i></a>
                     </div>
                 </div>
-                <!-- End Social Link -->
+
+                <div class="col-lg-12 pt-4 d-lg-block d-md-block d-none">
+                    <div class="">
+                        <a href="#">
+                            <img src="./assets/poster/left-poster.jpg">
+                        </a>
+                    </div>
+                </div>
+
             </div>
             <!-- End Left Menu -->
 
             <!-- News Timeline -->
-            <div class="col-md-6 border border-top-0">
-                <div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="trending-label">Trending Topics</span>
+                    <div class="topics-wrapper flex-nowrap pb-2" id="topics">
+                        <div class="topic">IPL - First Qualifier</div>
+                        <div class="topic">Corona Returns</div>
+                        <div class="topic">Monsoon Update</div>
+                        <div class="topic">Global Summit</div>
+                        <div class="topic">Elections 2025</div>
+                        <div class="topic">AI Boom</div>
+                    </div>
+                </div>
+
+
+                <div class="border border-top-0">
                     <!-- Featured News -->
-                    <div class="card">
-                        <div class="card-body">
-
-                            <a href="news/show.html">
-                                <div class="display-6 fs-6 mb-1 text-muted fw-normal">Hindi News Politics</div>
-
-                                <div>
-                                    <span class="badge bg-danger">BHASKAR EXPLANER</span>
-                                    <span class="display-6 fs-5 pt-1 lh-1 text-uppercase text-dark fw-bold">
-                                        <span class="text-warning">
-                                            The story of Saddam Hussein
-                                        </span>
-                                        Born today American soldiers also cried on the gallows
-                                    </span>
+                    <div class="card news-card mt-0 border-0 border-bottom rounded-0">
+                        <div class="card-body p-0">
+                            <a href="news/show.html" class="text-decoration-none">
+                                <div class="mb-2">
+                                    <h4 class="mt-2 text-start lh-sm fw-semibold">
+                                        <span class="highlight">New Corona Variant </span> Vaccine less effective PM
+                                        speaks like he’s every woman’s husband Bengaluru in IPL final.
+                                    </h4>
                                 </div>
                             </a>
-                            <div class="container d-flex flex-column">
-                                <div class="">
-                                    <h1 class="display-6"></h1>
-                                    <i class="fa-sharp fa-regular fa-circle-play text-white video-icon"></i>
-                                    <img src="./assets/images/modi.gif.jpg" height="340" width="100%"
-                                        class="img-fluid rounded-1">
-                                    <div class="d-flex justify-content-between mt-3 mb-2">
-                                        <a href="#" class="display-5 text-muted fs-5 fw-bolder m-1">National</a>
-                                        <div>
-                                            <a class="btn btn-icon btn-light" href="#"><i
-                                                    class="fa-brands fa-facebook-f fas"></i></a>
-                                            <a class="btn btn-icon btn-light" href="#"><i
-                                                    class="fa-brands fa-twitter fas"></i></a>
-                                            <a class="btn btn-icon btn-light" href="#"><i
-                                                    class="fa-sharp fa-solid fa-link fas"></i></a>
-                                        </div>
-
-                                    </div>
+                            <div class="video-thumbnail news-thumbnail mt-3">
+                                <img src="https://images.bhaskarassets.com/webp/thumb/512x0/web2images/521/2025/05/29/mnbcoverapril-ezgifcom-resize-33_1748540230.gif"
+                                    alt="News Thumbnail">
+                                <i class="bi bi-play-circle-fill video-icon"></i>
+                            </div>
+                            <div class="news-footer mt-2 d-flex justify-content-between align-items-center">
+                                <span class="news-meta border px-3 py-1 rounded-pill">India <i
+                                        class="fa-solid fa-chevron-right ms-1"></i></span>
+                                <div>
+                                    <a class="btn btn-icon btn-light py-0" href="#"><i
+                                            class="fa fa-facebook fs-6 text-muted"></i></a>
+                                    <a class="btn btn-icon btn-light py-0" href="#"><i
+                                            class="fa fa-twitter fs-6 text-muted "></i></a>
+                                    <a class="btn btn-icon btn-light py-0" href="#"><i
+                                            class="fa fa-link fs-6 text-muted"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Normal News -->
-                    <div class="card mt-2">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="card-body pt-4">
-                                    <p class="lh-sm"><span class="badge bg-danger">BHASKAR EXPLORE</span>
-                                        <span class="display-6 fs-5 pt-1 lh-1 text-uppercase fw-bold"
-                                            style="color: #f89c1d;">The story behind the Naxalite
-                                            attack in Chhattisgarh:</span>
-                                        <span class="display-6 fs-5 pt-1 lh-1 text-uppercase text-dark fw-bold">Most
-                                            attacks in summer; Still there was no
-                                            patrolling team, no bulletproof vehicle</span>
-                                    </p>
-                                    <div class="pt-lg-3">
-                                        <p class="display-6 fw-bold fs-6 text-primary ">INTERNATIONAL</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4" style="position: relative;">
-                                <img src="./assets/images/card-image.jpg" alt="gif"
-                                    class="h-75 w-85 mt-3 float-center card-img">
-                                <span class="badge bg-info image-timeing">4:30</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="news-container"></div>
                 </div>
             </div>
             <!-- End News Timeline -->
 
             <!-- Right Menu -->
-            <div class="col-md-3">
+            <div class="col-md-3 pt-lg-0 pt-md-0 pt-4">
                 <!-- Featured Square Banner -->
-                <div class="container p-2">
-                    <img src="./assets/images/aside.jpg" class="img-fluid">
+                <div class="p-lg-2 p-md-2 p-1">
+                    <a href="#">
+                        <img src="./assets/banner/side-bar.jpg" class="img-fluid">
+                    </a>
                 </div>
 
                 <!-- Side Long Banner -->
-                <div class="container p-2">
-                    <i class="fa-sharp fa-regular fa-circle-play video-icons"></i>
-                    <img src="./assets/images/sakhi-sampradaye.jpg" height="420" width="357"
-                        class="img-fluid rounded-1 mt-3">
+                <div class="position-relative d-inline-block p-lg-2 p-md-2 p-1">
+                    <a href="#">
+                        <!-- Play Icon Circle -->
+                        <div class="play-circle d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <!-- Image -->
+                        <img src="./assets/banner/indias-5th-generation-fighter.jpg" height="420" width="357"
+                            class="img-fluid rounded-1 mt-3">
+                    </a>
                 </div>
 
                 <!-- Rasi Widget -->
-                <div class="container p-2">
-                    <div class="bg-light p-3">
-                        <span class="fw-bolder fs-6">TODAY RASHIFUL</span><br>
-                        <img src="./assets/images/rashi_img_1585907145.27231585907145.png"
-                            class="img-fluid w-25 h-25"><span class="fw-bold fs-5">Aries</span>
-                        <div class="text-muted fw-600 fs-6">
-                            Positive Some happiness can be found. You will feel happy and energetic by solving family
-                            problems. Any special issue will also be discussed with the family. People will be impressed
-                            by you. Negative- There can be tension with the neighbor..
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bg-light p-lg-3 p-md-3 p-1 text-start">
+                            <p class="text-black fs-7 fw-semibold">TODAY RASHIFUL</p>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="">
+                                    <img src="./assets/icon/rashi_img.png" class="rashi-icon">
+                                </div>
+                                <span class="fw-bold text-black fs-6">Aries</span>
+                            </div>
+                            <div class="rashi-text">
+                                Positive Some happiness can be found. You will feel happy and energetic by solving
+                                family
+                                problems. Any special issue will also be discussed with the family. People will be
+                                impressed
+                                by you. Negative- There can be tension with the neighbor..
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- End Rasi Widget -->
 
-
-
-                <!-- Imp Links -->
-                <div class="container p-2">
-                    <div class="bg-light p-3">
-                        <div class="">
-                            <span class="">Imp Links:</span>
-                            <ul class="">
-                                <li><a class="text-muted" href="#">Advertise with Us</a>
-                                </li>
-                                <li><a class="text-muted" href="#">DB Reporter</a>
-                                </li>
-                                <li><a class="text-muted" href="#">Terms &amp; Conditions and Grievance Redressal
-                                        Policy</a>
-                                </li>
-                                <li><a class="text-muted" href="#">Contact Us</a>
-                                </li>
-                                <li><a class="text-muted" href="#">RSS</a>
-                                </li>
-                                <li><a class="text-muted" href="#">Cookie Policy</a>
-                                </li>
-                                <li><a class="text-muted" href="#">Privacy Policy</a>
-                                </li>
+                <!-- Custom Footer Section -->
+                <div class="footer-links bg-light p-lg-4 p-md-3 p-1">
+                    <div class="row">
+                        <div class="col-md-12 mb-3 text-start">
+                            <h6 class="footer-heading">Imp Links:</h6>
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">Advertise with Us</a></li>
+                                <li><a href="#" class="footer-link">DB Reporter</a></li>
+                                <li><a href="#" class="footer-link">Terms & Conditions and Grievance Redressal
+                                        Policy</a></li>
+                                <li><a href="#" class="footer-link">Contact Us</a></li>
+                                <li><a href="#" class="footer-link">RSS</a></li>
+                                <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                                <li><a href="#" class="footer-link">Privacy Policy</a></li>
                             </ul>
-                            <span class="">Our Divisions</span>
-                            <ul class="">
-                                <li><a class="text-muted" href="#">DainikBhaskar.com</a></li>
-                                <li><a class="text-muted" href="#">DivyaBhaskar.com</a></li>
-                                <li><a class="text-muted" href="#">DivyaMarathi.com</a></li>
-                                <li><a class="text-muted" href="#">MoneyBhaskar.com</a></li>
-                                <li><a class="text-muted" href="#">HomeOnline.com</a></li>
-                                <li><a class="text-muted" href="#">BhaskarAd.com</a></li>
+                        </div>
+                        <div class="col-md-12 mb-3 text-start">
+                            <h6 class="footer-heading">Our Divisions</h6>
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">DainikBhaskar.com</a></li>
+                                <li><a href="#" class="footer-link">DivyaBhaskar.com</a></li>
+                                <li><a href="#" class="footer-link">DivyaMarathi.com</a></li>
+                                <li><a href="#" class="footer-link">MoneyBhaskar.com</a></li>
+                                <li><a href="#" class="footer-link">HomeOnline.com</a></li>
+                                <li><a href="#" class="footer-link">BhaskarAd.com</a></li>
                             </ul>
-                            <p>Copyright © 2023-24 TezKhabar, All Rights Reserved</p>
+                        </div>
+                        <div class="col-12 text-center mt-2 border-top-footer">
+                            <p class="footer-copy mb-0 mt-lg-0 mt-md-0 mt-2">Copyright © 2023-24 <strong>TezKhabar</strong>, All Rights
+                                Reserved</p>
                         </div>
                     </div>
                 </div>
-                <!-- End Imp Links -->
             </div>
             <!-- End Right Menu -->
         </div>
     </div>
+    <script src="./assets/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
